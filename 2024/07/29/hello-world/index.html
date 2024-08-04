@@ -170,8 +170,8 @@
     let ele = document.createElement('script')
     ele.id = 'utterances_comment'
     ele.src = 'https://utteranc.es/client.js'
-    ele.setAttribute('repo', 'https://github.com/zhenzk/zhenzk.github.io')
-    ele.setAttribute('issue-term', 'og:title')
+    ele.setAttribute('repo', 'zhenzk/blogtalks')
+    ele.setAttribute('issue-term', 'pathname')
     const nowTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'photon-dark' : 'github-light'
     ele.setAttribute('theme', nowTheme)
     ele.crossOrigin = 'anonymous'
@@ -193,8 +193,8 @@
 
   btf.addGlobalFn('themeChange', utterancesTheme, 'utterances')
 
-  if ('Utterances' === 'Utterances' || !true) {
-    if (true) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+  if ('Utterances' === 'Utterances' || !false) {
+    if (false) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
     else loadUtterances()
   } else {
     window.loadOtherComment = loadUtterances
